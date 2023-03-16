@@ -1,13 +1,13 @@
 ## Cloner le repository
 ```
-    git clone {url_repo}
+    git clone https://github.com/FlorianGalvani/exam_python.git
 ```
 
 ## Installation
 
 ### Creation de l'environnement virtuel
 ```
-    cd {nom_repo}
+    cd exam_python
     python3 -m venv env
 ```
 
