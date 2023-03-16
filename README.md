@@ -1,9 +1,9 @@
-## Cloner le repository
+## Installation
+
+### Cloner le repository
 ```
     git clone https://github.com/FlorianGalvani/exam_python.git
 ```
-
-## Installation
 
 ### Creation de l'environnement virtuel
 ```
