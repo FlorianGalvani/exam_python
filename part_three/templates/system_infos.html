@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="mt-4">
+
+    <div>
+        <h2>Informations</h2>
+        <p>Host Name : {{ infos.get('network').get('hostname') }}</p>
+        <p>WLAN IP Address : {{ infos.get('network').get('ip') }}</p>
+        <p>MAC Address : {{ infos.get('network').get('mac') }}</p>
+    </div>
+
+    <div>
+        <h2>OS</h2>
+        <p>Name : {{ infos.get('os').get('name') }} {{infos.get('os').get('version')}} </p>
+    </div>
+    
+    <div>
+        <h2>CPU</h2>
+        <p>Name : {{ infos.get('cpu').get('name') }} </p>
+        <p>Cores : {{ infos.get('cpu').get('cores') }} </p>
+        <p>Threads : {{ infos.get('cpu').get('threads') }} </p>
+        <p>Max frequency : {{ infos.get('cpu').get('maxFrequency') }} </p>
+    </div>
+    
+    <div>
+        <h2>RAM</h2>
+        <p>Total : {{ infos.get('ram').get('total') }} </p>
+    </div>
+</div>
+{% endblock %}
