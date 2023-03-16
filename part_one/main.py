@@ -21,5 +21,11 @@ class PartOne :
     ]
 
     def get_random_sentence(self):
+        """
+            Return a random sentence from quotes list
+
+            Returns:
+                str: random sentence
+        """
         return(random.choice(self.quotes))
 

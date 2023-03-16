@@ -1,4 +1,3 @@
-# check if the file is __main__ and run the main function
 import sys
 from start_message import StartMessage as SM
 from part_one.main import PartOne as PO
@@ -9,17 +8,24 @@ sm = SM()
 po = PO()
 pt = PT()
 
-def startMessage():
-    print(sm.getMessage())
-
 def errorMessage(error):
+    """
+        Print error message
+
+        Parameters:
+            error : str
+                Error message
+
+        Returns:
+            None
+    """
     print(f"{error}")
     print("python main.py 1 | Exercice 1 : Traduction Thelassien -> Français")
     print("python main.py 2 | Exercice 2 : Dictionnaire vers JSON")
     print("python main.py 3 | Exercice 3 : FLASK APP - Informations système")
 
 def main():
-    startMessage()
+    print(sm.getMessage())
 
     if len(sys.argv) > 1:
         if (sys.argv[1] == "1"):

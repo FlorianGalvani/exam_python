@@ -1,4 +1,3 @@
 flask
 py-cpuinfo
 psutil
-python-nmap
